@@ -5,15 +5,15 @@ int n,r,sum=0,temp;
 printf("enter the number=");    
 scanf("%d",&n);    
 temp=n;    
-while(n>0)    
+while(n != 0)    
 {    
 r=n%10;    
-sum=sum+(r*r*r);    
-n=n/10;    
+result += r*r*r;    
+n /= 10;    
 }    
-if(temp==sum)    
-printf("armstrong  number ");    
+if(temp==result)    
+printf("armstrong  number ",n);    
 else    
-printf("not armstrong number");    
+printf("not armstrong number",n);    
 return 0;  
 }   
